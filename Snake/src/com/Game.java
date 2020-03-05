@@ -20,11 +20,14 @@ public class Game {
     
     public static void main(String[] args) {
         Game game = new Game(); 
-        game.initialize();
-        try {
+        try { 
+		
             game.play();
+			
         } catch (InterruptedException ex) {
+			
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+			
         }
     }
     
